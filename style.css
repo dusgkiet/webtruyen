@@ -17,6 +17,7 @@
   overflow-y: auto;
 }
 
+/* Chỉnh kích thước cho ảnh thumb-nail trong Truyện Mới */
 .scroll-area img {
   width: 70px;
   height: 94px;
@@ -67,10 +68,10 @@ a .title-truyen {
   margin-bottom: 0.5rem;
 }
 
-/* Custom thể loại */
+/* Custom thể loại truyện */
 .custom-genre {
   color: #6750a4;
-  border: 1px solid #6750a44d;
+  border: 1px solid #6750a44d; /* viền */
   border-radius: 999px;
   font-size: 14px;
   font-weight: 500;
