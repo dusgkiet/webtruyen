@@ -1,0 +1,83 @@
+.body {
+  font-family: Nunito, sans-serif;
+}
+
+.custom-card {
+  width: 560px;
+  height: 736px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+}
+
+.scroll-area {
+  width: 512px;
+  height: 1180px;
+  margin: 0 24px;
+  overflow-y: auto;
+}
+
+.scroll-area img {
+  width: 70px;
+  height: 94px;
+}
+
+/* Custom scrollbar styles */
+.scroll-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-area::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.scroll-area::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  padding-top: 24px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-group-item {
+  padding: 12px 0px;
+}
+
+.gap-3 {
+  gap: 1.25rem !important;
+}
+
+.card-body {
+  padding: 0px !important;
+}
+
+a .title-truyen {
+  margin-bottom: 0.5rem;
+}
+
+/* Custom thể loại */
+.custom-genre {
+  color: #6750a4;
+  border: 1px solid #6750a44d;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+.me-1 {
+  margin-right: 6px !important;
+}
