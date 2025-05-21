@@ -3,7 +3,8 @@
 }
 
 .custom-card {
-  width: 560px;
+  width: 570px;
+  max-width: 100%;
   height: 736px;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 1rem;
@@ -11,24 +12,24 @@
 }
 
 .scroll-area {
-  width: 512px;
-  height: 1180px;
+  height: 650px; /* hoặc auto */
   margin: 0 24px;
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
 }
 
 /* Chỉnh kích thước cho ảnh thumb-nail trong Truyện Mới */
-.scroll-area img {
+.imageTruyenMoi {
   width: 70px;
   height: 94px;
 }
 
-/* Custom scrollbar styles */
-.scroll-area::-webkit-scrollbar {
-  width: 8px;
+Custom scrollbar styles .scroll-area::-webkit-scrollbar {
+  display: none;
 }
 
-.scroll-area::-webkit-scrollbar-track {
+/* .scroll-area::-webkit-scrollbar-track {
   background: transparent;
 }
 
@@ -40,6 +41,7 @@
 .scroll-area::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.3);
 }
+*/
 
 h2 {
   padding-top: 24px;
