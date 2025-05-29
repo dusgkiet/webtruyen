@@ -801,6 +801,14 @@ h1 {
     margin-bottom: 0.5rem;
   }
 
+  .card .card-img-top {
+    min-width: 149px;
+  }
+
+  .row-cols-md-3 > * {
+    width: 24.333333%;
+  }
+
   .special-story .summary {
     font-size: 0.9rem;
     margin-bottom: 0.9rem;
@@ -833,6 +841,26 @@ h1 {
   .rank img {
     width: 30px;
   }
+
+  .views-story .views-icon {
+    width: 14px;
+  }
+
+  /* heron-section */
+  #dp-slider .dp_item:first-child {
+    z-index: 10 !important;
+    transform: rotateY(0deg) translateX(80px) !important;
+  }
+
+  .dp_item[data-position="2"] {
+    z-index: 9;
+    transform: rotateY(0deg) translateX(5%) scale(0.9);
+  }
+
+  .dp_item[data-position="3"] {
+    z-index: 8;
+    transform: rotateY(0deg) translateX(-8%) scale(0.8);
+  }
 }
 
 @media (min-width: 650px) and (max-width: 767px) {
@@ -853,7 +881,7 @@ h1 {
   }
 
   #dp-dots {
-    bottom: -11%;
+    bottom: -15%;
   }
 
   /* section-list-top */
@@ -1181,6 +1209,10 @@ h1 {
 
   #dp-dots {
     bottom: -10%;
+  }
+
+  .truyen-moi {
+    width: 342px;
   }
 }
 
