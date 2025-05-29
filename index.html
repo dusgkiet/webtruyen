@@ -14,33 +14,182 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="section-list-top">
+    <!-- Hero banner -->
+    <!-- <div class="section section-hero-banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="card custom-card">
-              <h2 class="text-uppercase text-center p-3">
+          <div class="col-md-8">
+            <div id="slider">
+              <div class="dp-wrap">
+                <div id="dp-slider">
+                  <div class="dp_item" data-class="1" data-position="1">
+                    <div class="dp-img">
+                      <img
+                        class="img-fluid"
+                        src="./asset/img/specialStory1.jpg"
+                        alt="investing" />
+                    </div>
+                  </div>
+
+                  <div class="dp_item" data-class="2" data-position="2">
+                    <div class="dp-img">
+                      <img
+                        class="img-fluid"
+                        src="./asset/img/specialStory2.jpg"
+                        alt="investing" />
+                    </div>
+                  </div>
+
+                  <div class="dp_item" data-class="3" data-position="3">
+                    <div class="dp-img">
+                      <img
+                        class="img-fluid"
+                        src="./asset/img/specialStory3.jpg"
+                        alt="investing" />
+                    </div>
+                  </div>
+                </div>
+
+                <span id="dp-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 51.401 51.401">
+                    <path
+                      id="Rectangle_4_Copy"
+                      data-name="Rectangle 4 Copy"
+                      class="cls-1"
+                      d="M32.246,0V33.178L0,31.953"
+                      transform="translate(0.094 25.276) rotate(-45)" />
+                  </svg>
+                </span>
+
+                <span id="dp-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 51.401 51.401">
+                    <path
+                      id="Rectangle_4_Copy"
+                      data-name="Rectangle 4 Copy"
+                      class="cls-1"
+                      d="M32.246,0V33.178L0,31.953"
+                      transform="translate(0.094 25.276) rotate(-45)" />
+                  </svg>
+                </span>
+
+                <ul id="dp-dots">
+                  <li data-class="1" class="active"></li>
+                  <li data-class="2"></li>
+                  <li data-class="3"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Năm Tháng Mang Anh Đi</h3>
+            <div class="author">
+              <strong>Tác giả:</strong>Người viết truyện thần sầu
+            </div>
+            <p class="summary">
+              <strong>Văn án:</strong><br />Diệp Chi Hằng ra lệnh điều tôi đế
+              chi nhánh khác, Ngày nào cũng dính lấy bên cạnh, đúng là hơi phiền
+              thật
+            </p>
+            <button class="read-now">Đọc Ngay</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="section hero-section">
+      <div class="container">
+        <div class="row">
+          <!-- Bên trái: Slider ảnh -->
+          <div class="col-md-8">
+            <div id="slider">
+              <div class="dp-wrap">
+                <div id="dp-slider">
+                  <!-- Các slide ảnh sẽ được thêm ở đây bằng JS -->
+                </div>
+
+                <!-- Nút next -->
+                <span id="dp-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 51.401 51.401">
+                    <path
+                      class="cls-1"
+                      d="M32.246,0V33.178L0,31.953"
+                      transform="translate(0.094 25.276) rotate(-45)" />
+                  </svg>
+                </span>
+
+                <!-- Nút prev -->
+                <span id="dp-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 51.401 51.401">
+                    <path
+                      class="cls-1"
+                      d="M32.246,0V33.178L0,31.953"
+                      transform="translate(0.094 25.276) rotate(-45)" />
+                  </svg>
+                </span>
+
+                <!-- Dots (thêm bằng JS) -->
+                <ul id="dp-dots">
+                  <!-- <li class="active" data-class="1"></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bên phải: Mô tả truyện -->
+          <div class="col-md-4">
+            <div class="text-slider">
+              <!-- Phần này cũng sẽ được cập nhật bằng JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Danh sách truyện mới cập nhật và bảng xếp hạng -->
+    <div class="section section-list-top">
+      <div class="container">
+        <div class="row gx-0 list-top" style="--bs-gutter-x: 50px">
+          <div class="col-md-6 list-top-left">
+            <div class="card custom-card truyen-moi">
+              <h2 class="card-title text-uppercase text-center mb-16">
                 Truyện Mới Cập Nhật
               </h2>
-              <div class="card-body p-0">
+              <div class="card-body d-flex flex-column">
                 <ul
-                  class="list-group list-group-flush scroll-area"
+                  class="list-group list-group-flush flex-fill overflow-auto scroll-area"
                   id="truyenMoi">
                   <!-- JS sẽ inject dữ liệu vào đây -->
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card custom-card">
-              <h2 class="text-uppercase text-center p-3">Bảng Xếp Hạng</h2>
-              <div class="card-body p-0">
+          <div class="col-md-6 list-top-right">
+            <div class="card custom-card bang-xep-hang">
+              <h2 class="card-title text-uppercase text-center mb-16">
+                Bảng Xếp Hạng
+              </h2>
+              <div class="card-body d-flex flex-column">
                 <ul
-                  class="list-group list-group-flush scroll-area"
+                  class="list-group list-group-flush flex-fill overflow-auto scroll-area"
                   id="bangXepHang">
                   <!-- JS sẽ inject dữ liệu vào đây -->
                 </ul>
@@ -50,6 +199,64 @@
         </div>
       </div>
     </div>
+
+    <!-- Đề xuất truyện hay -->
+    <div class="section section-good-story">
+      <div class="container">
+        <div
+          class="card-header row gx-0 justify-content-between align-items-center mb-3">
+          <h2 class="card-title text-uppercase m-0" style="width: auto">
+            Đề xuất truyện hay
+          </h2>
+          <a
+            class="views-more text-decoration-none"
+            href="#"
+            style="width: auto">
+            Xem thêm
+          </a>
+        </div>
+
+        <div class="list-story position-relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="listStoryWrapper">
+              <!-- JS sẽ inject các .swiper-slide tại đây -->
+            </div>
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- optional pagination -->
+            <div class="swiper-pagination-control">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Truyện đã hoàn thành -->
+    <div class="section section-completed-story">
+      <div class="container">
+        <div
+          class="card-header row gx-0 justify-content-between align-items-center mb-3">
+          <h2 class="card-title text-uppercase m-0" style="width: auto">
+            Truyện đã hoàn thành
+          </h2>
+          <a
+            class="views-more text-decoration-none"
+            href="#"
+            style="width: auto">
+            Xem thêm
+          </a>
+        </div>
+
+        <div
+          class="row row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3"
+          id="completedStoryWrapper">
+          <!-- JS sẽ inject <div class="col">…</div> tại đây -->
+        </div>
+      </div>
+    </div>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -61,6 +268,97 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"></script>
 
-    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- JS cho Slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+        function detect_active() {
+          // get active
+          var get_active = $("#dp-slider .dp_item:first-child").data("class");
+          $("#dp-dots li").removeClass("active");
+          $("#dp-dots li[data-class=" + get_active + "]").addClass("active");
+        }
+        $("#dp-next").click(function () {
+          var total = $(".dp_item").length;
+          $("#dp-slider .dp_item:first-child")
+            .hide()
+            .appendTo("#dp-slider")
+            .fadeIn();
+          $.each($(".dp_item"), function (index, dp_item) {
+            $(dp_item).attr("data-position", index + 1);
+          });
+          detect_active();
+        });
+
+        $("#dp-prev").click(function () {
+          var total = $(".dp_item").length;
+          $("#dp-slider .dp_item:last-child")
+            .hide()
+            .prependTo("#dp-slider")
+            .fadeIn();
+          $.each($(".dp_item"), function (index, dp_item) {
+            $(dp_item).attr("data-position", index + 1);
+          });
+
+          detect_active();
+        });
+
+        $("#dp-dots li").click(function () {
+          $("#dp-dots li").removeClass("active");
+          $(this).addClass("active");
+          var get_slide = $(this).attr("data-class");
+          console.log(get_slide);
+          $("#dp-slider .dp_item[data-class=" + get_slide + "]")
+            .hide()
+            .prependTo("#dp-slider")
+            .fadeIn();
+          $.each($(".dp_item"), function (index, dp_item) {
+            $(dp_item).attr("data-position", index + 1);
+          });
+        });
+
+        $("body").on(
+          "click",
+          "#dp-slider .dp_item:not(:first-child)",
+          function () {
+            var get_slide = $(this).attr("data-class");
+            console.log(get_slide);
+            $("#dp-slider .dp_item[data-class=" + get_slide + "]")
+              .hide()
+              .prependTo("#dp-slider")
+              .fadeIn();
+            $.each($(".dp_item"), function (index, dp_item) {
+              $(dp_item).attr("data-position", index + 1);
+            });
+
+            detect_active();
+          }
+        );
+      });
+    </script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+
+    <script src="./asset/js/index.js"></script>
   </body>
 </html>
