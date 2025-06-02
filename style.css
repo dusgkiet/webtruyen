@@ -774,7 +774,7 @@ h1 {
 @media (min-width: 768px) and (max-width: 849px) {
   #dp-slider,
   .dp-img img {
-    height: 215px;
+    height: 221px;
   }
 
   .row {
@@ -784,7 +784,7 @@ h1 {
   #dp-next,
   #dp-prev {
     top: 36%;
-    right: -1.9%;
+    right: 0%;
   }
 
   .h3,
@@ -867,7 +867,7 @@ h1 {
   /* hero-section */
   #dp-next,
   #dp-prev {
-    right: 2.4%;
+    right: 3.4%;
   }
 
   .row {
@@ -877,7 +877,7 @@ h1 {
   #dp-slider,
   .dp-img img {
     width: 100%;
-    height: 276px;
+    height: 302px;
   }
 
   #dp-dots {
