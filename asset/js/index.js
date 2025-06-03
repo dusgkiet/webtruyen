@@ -1,73 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     const imagePaths = [
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "Ơn Nghĩa Sâu Nặng, Chàng Tự Mà Trả",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 60
-//         },
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "tín hiệu tâm động",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 60
-//         },
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: " tiệm cà phê của miểu miểu",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 120
-//         },
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "Dẫn chồng trước và anh ta lúc 5 tuổi tham gia kidshow",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 120
-//         }, {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "Ơn Nghĩa Sâu Nặng, Chàng Tự Mà Trả",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 120
-//         },
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "Ơn Nghĩa Sâu Nặng, Chàng Tự Mà Trả",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 120
-//         },
-//         {
-//             image: "./asset/img/link_anh_1.jpg",
-//             title: "Ơn Nghĩa Sâu Nặng, Chàng Tự Mà Trả",
-//             updatedAt: "10 phút",
-//             genres: ["Ngôn tình", "Đô thị"],
-//             totalChapterss: 120,
-//             currentChapters: 120
-//         },
-//     ];
-
-//     const imageContainer = document.getElementById('imageContainer');
-
-//     imagePaths.forEach((path, index) => {
-//         const img = document.createElement('img');
-//         img.src = path;
-//         img.alt = `${image}`;
-//         imageContainer.appendChild(img);
-//     });
-// });
-
-
 // Hàm xử lý thời gian cập nhật
 function formatTimeAgo(date) {
   const now = new Date();
@@ -506,4 +436,98 @@ truyenData.forEach((truyen) => {
       </div>
     `;
   completedStoryWrapper.appendChild(listStory);
+});
+
+// document.querySelectorAll(".sidebar").forEach(item => {
+//   item.onclick = () => {
+//     const data = item.getAttribute("data-index")
+//     if (data === 1) {
+
+//     } else { }
+//   }
+// });
+
+// Sidebar 1: Thông báo
+const notifyList = [
+  { type: "pin", date: "13/3", text: "Vai Trò Và Quyền Lợi Của Thành Viên" },
+  { type: "pin", date: "13/3", text: "🔥SOS🔥 BẠN SẼ MẤT HẾT CP VÀO NGÀ..." },
+  { type: "pin", date: "13/3", text: "Thưởng Phạt Comment, Đánh Giá, Báo Cáo" },
+  { type: "green", date: "13/3", text: "Hướng Dẫn Đăng Ký Tài Khoản" },
+  { type: "green", date: "13/3", text: "Cách Kiếm Point" },
+  { type: "green", date: "13/3", text: "Thưởng Top Chi Tiêu" },
+];
+
+// Sidebar 2: Truyện
+const storyInfo = {
+  title: "Vì Em Là Ước Nguyện Của Anh",
+  updateTime: "3 Giờ Trước",
+  tags: ["Ngôn tình", "Đô thị"],
+  cover: "https://via.placeholder.com/60x80.png?text=Ảnh", // thay bằng ảnh thật
+};
+
+const chapterList = [
+  { isNew: true, title: "Vai Trò Và Quyền Lợi Của Thành Viên", time: "4 Giờ Trước" },
+  { isNew: true, title: "Nếu Có Thể Quay Lại Ngày Hôm Ấy", time: "6 Giờ Trước" },
+  { isNew: false, title: "Tôi Là Người Yêu – Không Phải Nhà Tù Th...", time: "8 Giờ Trước" },
+  { isNew: false, title: "Đào Mỏ Gặp Cao Thủ", time: "12 Giờ Trước" },
+];
+
+// Render helpers
+function renderNotifyItem({ type, date, text }) {
+  const icon = type === "pin" ? "📌" : "🟢";
+  return `
+    <li class="notify-item">
+      <span class="icon">${icon}</span>
+      <span class="date">${date}</span>
+      <span class="text">${text}</span>
+    </li>`;
+}
+
+function renderChapterItem({ isNew, title, time }) {
+  return `
+    <li class="chapter-item">
+      ${isNew ? `<span class="badge">New</span>` : ""}
+      <span class="chapter-title">${title}</span>
+      <span class="chapter-time">${time}</span>
+    </li>`;
+}
+
+// Gắn nội dung khi click
+document.querySelectorAll(".sidebar").forEach(item => {
+  item.onclick = () => {
+    const index = item.getAttribute("data-index");
+
+    if (index === "1") {
+      item.innerHTML = `
+        <div class="card">
+          <ul class="notify-list">
+            ${notifyList.map(renderNotifyItem).join("")}
+          </ul>
+          <div class="see-more">Xem Thêm</div>
+        </div>
+      `;
+    }
+
+    if (index === "2") {
+      item.innerHTML = `
+        <div class="card">
+          <h3 class="title">MẬT THẤT</h3>
+          <div class="story">
+            <img src="${storyInfo.cover}" alt="cover" class="story-img" />
+            <div>
+              <p class="story-title">${storyInfo.title}</p>
+              <p class="story-update">Thời Gian Cập Nhật: ${storyInfo.updateTime}</p>
+              <div class="story-tags">
+                ${storyInfo.tags.map(tag => `<span class="tag">${tag}</span>`).join("")}
+              </div>
+            </div>
+          </div>
+          <ul class="chapter-list">
+            ${chapterList.map(renderChapterItem).join("")}
+          </ul>
+          <div class="see-more">Xem Thêm</div>
+        </div>
+      `;
+    }
+  };
 });
