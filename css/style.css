@@ -11,7 +11,7 @@ body {
 
 body {
   font-family: Nunito, sans-serif;
-  background-image: url(./asset/img/background.png);
+  background-image: url("./asset/img/background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -406,6 +406,25 @@ a.story-title {
 .rank img {
   width: 50px;
 }
+
+/* .filter-tabs .nav-link {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  color: #333;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+}
+
+.filter-tabs .nav-link.active {
+  background: linear-gradient(90deg, #9dd2fa, #d57bfb);
+  color: #fff;
+}
+
+.filter-tabs .nav-link:hover {
+  background: linear-gradient(90deg, #6dd5fa, #c579fb);
+  color: #fff;
+} */
 
 /* List Truyện Hay */
 /* CSS (thêm sau file Bootstrap) */
