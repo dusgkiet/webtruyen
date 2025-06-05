@@ -276,7 +276,8 @@ nav {
   }
 
   .custom-header {
-    padding: 20px 30px;
+    border-radius: 50px;
+    padding: 8px;
   }
 
   .header-logo span {
@@ -285,6 +286,10 @@ nav {
 
   .nav-link {
     font-size: 1rem;
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important;
   }
 }
 
@@ -303,12 +308,12 @@ nav {
   }
 
   .custom-header {
-    border-radius: 20px;
-    padding: 15px 20px;
+    border-radius: 50px;
+    padding: 8px;
   }
 
   .header-nav {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 1rem;
     align-items: flex-start;
   }
@@ -334,8 +339,12 @@ nav {
     display: none !important;
   }
 
-  .btn-login {
-    display: none !important;
+  .fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  .display-4 {
+    font-size: calc(0.475rem + 2.7vw);
   }
 }
 
@@ -358,7 +367,7 @@ nav {
   }
 
   .custom-header {
-    padding: 15px 15px;
+    padding: 8px;
   }
 
   .btn-login {
@@ -372,6 +381,18 @@ nav {
 
   .search-icon {
     font-size: 16px;
+  }
+
+  .display-4 {
+    font-size: calc(0.475rem + 2.7vw);
+  }
+
+  .fs-4 {
+    font-size: 1rem !important;
+  }
+
+  .footer {
+    padding: 0;
   }
 }
 
@@ -394,7 +415,7 @@ nav {
   }
 
   .custom-header {
-    padding: 10px 10px;
+    padding: 8px;
   }
 
   .header-logo span {
@@ -412,5 +433,13 @@ nav {
 
   .search-icon {
     font-size: 15px;
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important;
+  }
+
+  .footer {
+    padding: 0;
   }
 }

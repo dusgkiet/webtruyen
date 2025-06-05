@@ -59,11 +59,44 @@
             <a href="#" class="nav-link text-dark">Tủ Truyện</a>
             <i class="fas fa-search search-icon"></i>
           </nav>
+          <!-- Nút menu hamburger chỉ hiển thị trên màn nhỏ -->
+          <button
+            class="btn btn-outline-dark d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu">
+            <i class="fas fa-bars"></i>
+          </button>
+
           <!-- Button riêng -->
           <button class="btn btn-login">Đăng Nhập</button>
         </div>
       </div>
     </header>
+
+    <!-- Offcanvas Menu (menu trượt bên phải) -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column gap-3">
+        <a href="./index.html" class="nav-link text-dark">Trang Chủ</a>
+        <a href="./story.html" class="nav-link text-dark">Truyện</a>
+        <a href="#" class="nav-link text-vip">Khu Vực Vip</a>
+        <a href="#" class="nav-link text-dark">Tủ Truyện</a>
+        <button class="btn btn-login w-100 mt-2">Đăng Nhập</button>
+      </div>
+    </div>
 
     <!-- Hero banner -->
     <div class="section hero-section">
