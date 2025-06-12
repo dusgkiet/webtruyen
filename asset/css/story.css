@@ -11,7 +11,7 @@ body {
 
 body {
   font-family: Nunito, sans-serif;
-  background-image: url(./asset/img/background.png);
+  background: linear-gradient(135deg, #f4f0fe, #fae8fe);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,8 +52,12 @@ body {
   transition: color 0.3s ease;
 }
 
-nav {
+/* nav {
   margin-right: 52px;
+} */
+
+.gap-3 {
+  gap: 2.5rem !important;
 }
 
 /* Hiệu ứng khi hover */
@@ -80,6 +84,7 @@ nav {
   padding-bottom: 5px;
 }
 
+/* Hover cho Khu vực Vip  */
 .text-vip:hover {
   background: none;
   -webkit-background-clip: unset;
@@ -112,9 +117,9 @@ nav {
 .btn-login:hover {
   cursor: pointer;
   background: linear-gradient(135deg, #9dd2fa 0%, #d57bfb 70%, #d57bfb 100%);
-  color: #fff !important;
-  transform: scale(1.03);
+  background-position: right;
   backdrop-filter: blur(30px);
+  box-shadow: 0px 10px 30px 0px rgba(213, 123, 251, 0.4);
 }
 
 .gap-4 {
@@ -123,6 +128,10 @@ nav {
 
 .px-4 {
   padding-right: 0.5rem !important;
+}
+
+.logo-title {
+  color: #000;
 }
 /* END HEADER */
 
@@ -1162,7 +1171,7 @@ h1 {
   }
 
   #completedStoryWrapper.row {
-    column-gap: 7px;
+    column-gap: 5px;
   }
 
   .card {
