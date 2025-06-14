@@ -1,0 +1,252 @@
+@media (min-width: 1025px) and (max-width: 1140px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  /* section 2 bảng */
+  .custom-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+  /* Container cho trang web */
+  .container {
+    max-width: 800px;
+  }
+
+  /* section-list-top */
+  .scroll-area {
+    width: 578px;
+    height: 550px;
+    margin: 0 1.5rem;
+  }
+  /* 
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  } */
+
+  .row {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 849px) {
+  .row {
+    width: 100%;
+  }
+
+  /* section-list-top */
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .scroll-area {
+    width: 577px;
+  }
+
+  .rank,
+  .rank img {
+    width: 30px;
+  }
+
+  .views-story .views-icon {
+    width: 14px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+  /* section-list-top */
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .scroll-area {
+    width: 682px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 649px) {
+  .list-top-lef {
+    width: 240px;
+    margin-right: 0px;
+  }
+
+  .custom-card {
+    width: 100%;
+  }
+
+  .scroll-area {
+    width: 552px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .views-story {
+    font-size: 0.75rem;
+  }
+
+  .list-story .card {
+    width: 100%;
+  }
+
+  .card .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  #listStoryWrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .rank img {
+    width: 35px;
+  }
+
+  a.story-title {
+    font-size: 0.9rem;
+  }
+
+  .views-story {
+    font-size: 0.75rem;
+  }
+
+  .list-story .card {
+    width: 100%;
+  }
+
+  .card .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+  #listStoryWrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .custom-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .card .card-img-top {
+    min-width: 150px;
+  }
+
+  .col {
+    width: 123px;
+  }
+
+  #completedStoryWrapper {
+    width: 307px;
+  }
+
+  #completedStoryWrapper.row {
+    column-gap: 7px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* section-list-top */
+  .scroll-area {
+    width: 100%;
+  }
+
+  a.story-title {
+    font-size: 0.8rem;
+  }
+
+  /* Truyện mới cập nhật */
+  .section-list-top .card-title {
+    font-size: 1.4rem;
+  }
+
+  /* Bảng xếp hạng */
+  .rank {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* #listStoryWrapper {
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col {
+    width: 150px;
+  } */
+
+  /* .card {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  } */
+
+  /* section-list-top */
+  .scroll-area {
+    width: 100%;
+  }
+
+  a.story-title {
+    font-size: 0.9rem;
+  }
+
+  /* Truyện mới cập nhật */
+  .section-list-top .card-title {
+    font-size: 1.4rem;
+  }
+
+  .custom-card {
+    width: 300px;
+    height: 600px;
+    margin-bottom: 30px;
+  }
+
+  /* section-list-top */
+  /* Bảng xếp hạng */
+  .rank,
+  .rank img {
+    width: 20px;
+  }
+
+  .rank {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,124 @@
+/* ==================== RESPONSIVE CSS ==================== */
+
+/* Laptop nhỏ (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .custom-header {
+    border-radius: 50px;
+    padding: 8px;
+  }
+
+  .header-logo span {
+    font-size: 1.1rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .custom-header {
+    border-radius: 50px;
+    padding: 8px;
+  }
+
+  .header-nav {
+    /* flex-direction: column; */
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .header-links {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .header-links nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+  .btn-login {
+    align-self: flex-start;
+  }
+
+  .header-links nav {
+    display: none !important;
+  }
+
+  .fs-4 {
+    font-size: 1.1rem !important;
+  }
+
+  .display-4 {
+    font-size: calc(0.475rem + 2.7vw);
+  }
+}
+
+/* Mobile lớn (max-width: 768px) */
+@media (max-width: 768px) {
+  .custom-header {
+    padding: 8px;
+  }
+
+  .btn-login {
+    font-size: 0.95rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .search-icon {
+    font-size: 16px;
+  }
+
+  .display-4 {
+    font-size: calc(0.475rem + 2.7vw);
+  }
+
+  .fs-4 {
+    font-size: 1rem !important;
+  }
+
+  .footer {
+    padding: 0;
+  }
+}
+
+/* Mobile nhỏ (max-width: 576px) */
+@media (max-width: 576px) {
+  .custom-header {
+    padding: 8px;
+  }
+
+  .header-logo span {
+    font-size: 0.9rem;
+  }
+
+  .btn-login {
+    font-size: 0.9rem;
+    padding: 0.35rem 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .search-icon {
+    font-size: 15px;
+  }
+
+  .fs-4 {
+    font-size: 1.5rem !important;
+  }
+}

@@ -837,24 +837,6 @@ h1 {
   border-radius: 8px;
 }
 
-/* Responsive alignment
-@media (max-width: 767.98px) {
-  .footer {
-    text-align: center;
-  }
-
-  .footer .text-md-start,
-  .footer .text-md-end {
-    text-align: center !important;
-  }
-
-  .footer-social {
-    justify-content: center;
-    display: flex;
-    margin-top: 20px;
-  }
-} */
-
 /* Reponsive */
 @media (min-width: 1141px) and (max-width: 1440px) {
   .footer-container {
